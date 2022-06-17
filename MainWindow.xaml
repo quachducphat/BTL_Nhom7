@@ -1,0 +1,33 @@
+﻿<Window x:Class="CRUD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRUD"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
+        <Label Content="Điều" HorizontalAlignment="Left" Margin="30,118,0,0" VerticalAlignment="Top" Height="34" FontSize="14"/>
+        <Label Content="ND điều" HorizontalAlignment="Left" Margin="28,151,0,0" VerticalAlignment="Top" Height="33" FontSize="14" RenderTransformOrigin="0.495,0.51"/>
+        <Label Content="Khoản" HorizontalAlignment="Left" Margin="31,226,0,0" VerticalAlignment="Top" Height="30" FontSize="14"/>
+        <TextBox x:Name="dieu_txt" HorizontalAlignment="Left" Margin="143,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173" Height="27" FontSize="14"/>
+        <TextBox x:Name="nddieu_txt" HorizontalAlignment="Left" Margin="143,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173" Height="66" FontSize="14"/>
+        <TextBox x:Name="khoan_txt" HorizontalAlignment="Left" Margin="143,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173" Height="27" FontSize="14"/>
+        <Button x:Name="InsertBtn" Content="Insert" HorizontalAlignment="Left" Margin="143,350,0,0" VerticalAlignment="Top" Height="47" Width="107" FontSize="18" FontWeight="Bold" FontStyle="Normal" Click="InsertBtn_Click"/>
+        <Button x:Name="ClearBtn" Content="Clear" HorizontalAlignment="Left" Margin="619,350,0,0" VerticalAlignment="Top" Height="47" Width="107" FontSize="18" FontWeight="Bold" FontStyle="Normal" Click="ClearBtn_Click"/>
+        <Button x:Name="DeleteBtn" Content="Delete" HorizontalAlignment="Left" Margin="443,350,0,0" VerticalAlignment="Top" Height="47" Width="108" FontSize="18" FontWeight="Bold" FontStyle="Normal" Click="DeleteBtn_Click"/>
+        <Label Content="ND khoản" HorizontalAlignment="Left" Margin="31,263,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="ndkhoan_txt" HorizontalAlignment="Left" Margin="143,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173" Height="66" Background="White"/>
+        <DataGrid x:Name="drv" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="334,34,32,179" SelectionChanged="DataGrid_SelectionChanged"/>
+        <TextBox x:Name="muc_txt" HorizontalAlignment="Left" Margin="143,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173" Height="25"/>
+        <TextBox x:Name="phat_duoi_txt" HorizontalAlignment="Left" Margin="368,289,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="phat_tren_txt" HorizontalAlignment="Left" Margin="606,289,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Mục" HorizontalAlignment="Left" Margin="31,34,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Mức phạt dưới:" HorizontalAlignment="Left" Margin="380,263,0,0" VerticalAlignment="Top"/>
+        <Label Content="Mức phạt trên:" HorizontalAlignment="Left" Margin="619,263,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="UpdateBtn" Content="Update" HorizontalAlignment="Left" Margin="293,350,0,0" VerticalAlignment="Top" Height="47" Width="107" FontSize="18" FontWeight="Bold" FontStyle="Normal" Click="UpdateBtn_Click"/>
+        <Label Content="ND Mục" HorizontalAlignment="Left" Margin="31,68,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="ndmuc_txt" HorizontalAlignment="Left" Margin="143,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173" Height="49"/>
+
+    </Grid>
+</Window>
